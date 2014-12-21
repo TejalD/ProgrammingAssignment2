@@ -45,18 +45,49 @@ cacheSolve <- function(x, ...) {
 #z <- matrix(c(4,2,7,6), nrow = 2, ncol = 2)
 #a<- makeCacheMatrix(z)
 #a$get()
+#      [,1] [,2]
+#[1,]    4    7
+#[2,]    2    6
 #a$getinverse()
+#NULL
 #cacheSolve(a)
+#      [,1] [,2]
+#[1,]  0.6 -0.7
+#[2,] -0.2  0.4
 #a$getinverse()
+#      [,1] [,2]
+#[1,]  0.6 -0.7
+#[2,] -0.2  0.4
 #cacheSolve(a)
+#  getting cached inverse
+#     [,1] [,2]
+#[1,]  0.6 -0.7
+#[2,] -0.2  0.4
+
 
 #z<-matrix(c(1,2,3,4),2,2)
 #a$set(z)
 #a$get()
-#a$getinbverse()
+#      [,1] [,2]
+#[1,]    1    3
+#[2,]    2    4
+#a$getinverse()
+#NULL
 #cacheSolve(a)
+#      [,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
 #a$getinverse()
+#      [,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
 #cacheSolve(a)
+#  getting cached inverse
+#      [,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
 #a$getinverse()
-#a$getinverse()
+#      [,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
 
